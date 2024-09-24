@@ -1,8 +1,8 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="timot-ben",
-    version="0.0.1",
+    name="timot_ben",
+    version="0.0.3",
     description="My personal download module with my syntax",
     package_dir={"":"ben"},
     packages=find_packages(where="ben"),
