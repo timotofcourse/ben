@@ -7,11 +7,12 @@ setup(
     package_dir={"":"ben"},
     packages=find_packages(where="ben"),
     long_description="My own personal download module to use in my other projects",
+    long_description_content_type="text/markdown",
     url="https://github.com/timotofcourse/ben",
     author="filmabemtv2@gmail.com",
     license="MIT",
     classifiers=[
-        "License :: OSI Approved :: MIT LICENSE",
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.12",
         "Operating System :: OS Independent",
     ],
