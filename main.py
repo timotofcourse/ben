@@ -1,18 +1,10 @@
-#!/usr/bin/env python
 
 import requests
 import os
-import argparse
 from rich.console import Console
 from rich.progress import track
 
 console = Console()
-
-# Arguments for ben
-
-parser = argparse.ArgumentParser(prog="Ben", description="Command line tool to download files. Made to be used in Timot's software", epilog="For more detailed help look at github. :)")
-parser.add_argument('-l', '--link', help='Download links', required=True)
-parser.add_argument('-o', '--output', help='Download Output', required=True)
 
 # Download function
 
@@ -66,22 +58,3 @@ def make_dir(output_path):
 
     os.makedirs(output_path)
 
-
-# Main function to handle the arguments and call the download function 
-
-
-def main_function():
-
-    args = parser.parse_args()
-    url = args.link
-    output_path = args.output
-
-    output_checker(output_path)
-
-    download_file(url, output_path)
-
-
-
-if __name__ == '__main__':
-
-    main_function()
