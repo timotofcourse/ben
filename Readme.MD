@@ -7,11 +7,12 @@ There are already nice download modules but i decided to make my module to imple
 
 install the module with pip.
 
+Windows:
 ```powershell
 pip install timot-ben
 
 ```
-
+Linux:
 ```bash
 pip install timot-ben
 ```
